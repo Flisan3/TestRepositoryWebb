@@ -2,24 +2,47 @@
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   background-color: #d7edc0;
   color: black;
 }
 
+body {
+  background-color: #d7edc0;
+  height: 100vh;
+}
+
+body.dark-mode * {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
 body.dark-mode {
-  background-color: #121212;
+  background-color: rgb(32, 32, 32);
   color: white;
 }
 
 body.dark-mode .topHeader {
-  background-color: #333;
+  background-color: rgb(32, 32, 32);
   color: white;
 }
 
 body.dark-mode .introText {
-  border-color: #333;
+  border-color: black;
   color: white;
+  background-color: rgb(32, 32, 32);
+}
+
+body.dark-mode .introList {
+  background-color: rgb(32, 32, 32);
+}
+
+body.dark-mode .introList * {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+body.dark-mode .snowboard {
+  background-color: black;
 }
 
 .topHeader{
@@ -45,6 +68,7 @@ body.dark-mode .introText {
     position: relative;
     padding: 16px;
     list-style: none;
+    background-color: #d7edc0;
 }
 
 .snowboard{
