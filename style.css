@@ -78,6 +78,13 @@ body.dark-mode .snowboard {
     border-radius: 10px;
 }
 
+footer{
+    text-align: center;
+    padding: 32px;
+    font-size: 14px;
+    color: black;
+}
+
 @media (max-width: 600px) {
     .snowboard{
         position: relative;
