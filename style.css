@@ -21,11 +21,6 @@ body.dark-mode {
   color: white;
 }
 
-body.dark-mode .topHeader {
-  background-color: rgb(32, 32, 32);
-  color: white;
-}
-
 body.dark-mode .introText {
   border-color: black;
   color: white;
@@ -39,10 +34,6 @@ body.dark-mode .introList {
 body.dark-mode .introList * {
   background-color: rgb(32, 32, 32);
   color: white;
-}
-
-body.dark-mode .snowboard {
-  background-color: black;
 }
 
 .topHeader{
@@ -84,6 +75,54 @@ footer{
     font-size: 14px;
     color: black;
 }
+
+.dark-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #b7caa3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.dark-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(42, 33, 74);
+  background: none;
+}
+
+body.dark-mode .dark-toggle {
+  background-color: rgb(50, 50, 50);
+}
+
+body.dark-mode .dark-toggle svg {
+  fill: white;
+}
+
+.dark-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(42, 33, 74);
+}
+
+.icon-sun {
+  display: none;
+}
+
+body.dark-mode .dark-toggle svg {
+  fill: white;
+}
+
 
 @media (max-width: 600px) {
     .snowboard{
